@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v2",
+  "image": "chymchym1905/auto-time:v1",
+  "integrations": [
+    {
+      "name": "s3-storage-integration",
+      "type": "s3",
+      "url": "s3://auto-time-temp-bucket/video-auto-time/",
+      "region": "us-west-2",
+      "accessKeyId": "AKIAQLPJLO3VX3Z666FN",
+      "secretAccessKey": "secret:S3_secret"
+    }
+  ],
+  "name": "machine",
+  "enabled": true,
+  "resources": {
+    "models": {
+      "id": "mos31ldc0olaf11",
+      "path": "opt/models/models/"
+    },
+    "machineType": "C4",
+    "replicas": 1,
+    "ports": [
+      80
+    ]
+  }
+}
