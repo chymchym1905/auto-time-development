@@ -4,3 +4,5 @@
 /classify*
 /d_annotated*
 /train3059*
+.venv/
+downloadedvideos/
